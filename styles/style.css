@@ -19,9 +19,30 @@
   --white-color: rgba(255, 255, 255, 1);
   --primary-title-font-size: 2.5rem;
   --secondary-title-font-size: 1.5rem;
+  --primary-button-font: 1.25rem;
 }
 
 /* here is common shared styles */
+
+.primary-section-title{
+  color: var(--primary-color-black-01);
+font-size: var(--primary-title-font-size);
+font-weight: 800;
+}
+.primary-section-description{
+  color: var(--secondary-description-color);
+font-weight: 400;
+}
+.primary-button{
+  border-radius: 8px;
+background: var(--primary-orange-color);
+max-width: 145px;
+padding: 14px 0;
+border: 0;
+color: var(--white-color);
+text-align: center;
+font-size: var(--primary-button-font);
+}
 
 /* here is header section */
 
@@ -176,6 +197,42 @@ input::placeholder {
 
 /* finished banner section */
 
+/* finished header section */
+
+/* here is main section */
+
+/* here is popular tour section  */
+
+.popular-tour-container{
+  display: flex;
+  gap: 80px;
+  max-width: 1350px;
+  margin: 145px auto;
+}
+
+.popular-tour-description-container{
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.popular-tour-description-container ul li{
+  list-style:disc;
+}
+
+.popular-tour-description-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 20px 20px 20px 40px;
+}
+
+/* finished popular tour section */
+
+
+
+
 /* here is responsive media query for mobile device */
 
 @media screen and (max-width: 600px) {
@@ -215,4 +272,17 @@ input::placeholder {
   }
 
   /* finished banner section */
+
+  /* here is popular tour section */
+
+  .popular-tour-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popular-tour-description-container{
+    padding: 0 15px;
+  }
+
+  /* finished popular tour section */
 }
