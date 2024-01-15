@@ -5,11 +5,78 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* here is css variable */
+
+:root{
+    --primary-color-black-01: rgba(19, 19, 24, 1);
+    --primary-description-color: rgba(90, 90, 93, 1);
+    --secondary-description-color: rgba(19, 19, 24, 0.7);
+    --primary-orange-color: rgba(255, 84, 0, 1);
+    --white-color: rgba(255, 255, 255, 1);
+    --primary-title-font-size: 2.5rem;
+    --secondary-title-font-size: 1.5rem;
+    
 }
 
 /* here is common shared styles */
 
 /* here is header section */
+
+/* here is nav section */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin: 45px auto;
+
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.web-name{
+    color: var(--primary-color-black-01);
+font-size: 2.25rem;
+font-weight: 800;
+}
+
+.uncommon-style{
+    color: var(--primary-orange-color);
+font-size: 2.25rem;
+font-weight: 800;
+}
+
+.navigate-container ul{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.navigate-container ul li a{
+    color: var(--Dark-02, #424247);
+font-family: Mulish;
+font-size: 18px;
+font-weight: 400;
+}
+
+.home{
+    color: var(--primary-orange-color);
+text-align: center;
+font-size: 1.125rem;
+font-weight: 700;
+}
+
+/* finished navigation section */
+
 
 /* finished header section */
 
