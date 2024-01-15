@@ -11,15 +11,14 @@
 
 /* here is css variable */
 
-:root{
-    --primary-color-black-01: rgba(19, 19, 24, 1);
-    --primary-description-color: rgba(90, 90, 93, 1);
-    --secondary-description-color: rgba(19, 19, 24, 0.7);
-    --primary-orange-color: rgba(255, 84, 0, 1);
-    --white-color: rgba(255, 255, 255, 1);
-    --primary-title-font-size: 2.5rem;
-    --secondary-title-font-size: 1.5rem;
-    
+:root {
+  --primary-color-black-01: rgba(19, 19, 24, 1);
+  --primary-description-color: rgba(90, 90, 93, 1);
+  --secondary-description-color: rgba(19, 19, 24, 0.7);
+  --primary-orange-color: rgba(255, 84, 0, 1);
+  --white-color: rgba(255, 255, 255, 1);
+  --primary-title-font-size: 2.5rem;
+  --secondary-title-font-size: 1.5rem;
 }
 
 /* here is common shared styles */
@@ -28,62 +27,192 @@
 
 /* here is nav section */
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1350px;
-    margin: 45px auto;
-
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1350px;
+  margin: 45px auto;
 }
 
-.logo-container{
-    display: flex;
-    align-items: center;
-    gap: 25px;
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
-.web-name{
-    color: var(--primary-color-black-01);
-font-size: 2.25rem;
-font-weight: 800;
+.web-name {
+  color: var(--primary-color-black-01);
+  font-size: 2.25rem;
+  font-weight: 800;
 }
 
-.uncommon-style{
-    color: var(--primary-orange-color);
-font-size: 2.25rem;
-font-weight: 800;
+.uncommon-style {
+  color: var(--primary-orange-color);
+  font-size: 2.25rem;
+  font-weight: 800;
 }
 
-.navigate-container ul{
-    display: flex;
-    align-items: center;
-    gap: 45px;
+.navigate-container ul {
+  display: flex;
+  align-items: center;
+  gap: 45px;
 }
 
-.navigate-container ul li a{
-    color: var(--Dark-02, #424247);
-font-family: Mulish;
-font-size: 18px;
-font-weight: 400;
+.navigate-container ul li a {
+  color: var(--Dark-02, #424247);
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.home{
-    color: var(--primary-orange-color);
-text-align: center;
-font-size: 1.125rem;
-font-weight: 700;
+.home {
+  color: var(--primary-orange-color);
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 700;
 }
 
 /* finished navigation section */
 
+/* here is banner section */
 
-/* finished header section */
+.banner-section-container {
+  background-image: url("../assets/Images/banner.png");
+  /* min-height: 550px; */
+  background-repeat: no-repeat;
+  max-width: 1350px;
+  margin: 0 auto 100px;
+  background-size: cover;
+  text-align: center;
+  border-radius: 16px;
+}
+.dummy-content {
+  min-height: 550px;
+  max-width: 1350px;
+  margin: 0 auto 100px;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 24, 0.8) 0%,
+    rgba(19, 19, 24, 0) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
 
-/* here is main section */
+.banner-title {
+  color: var(--white-color);
+  font-size: 4rem;
+  font-weight: 800;
+  padding-top: 105px;
+}
 
-/* finished main section */
+.banner-description {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  max-width: 975px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+}
 
-/* here is footer section */
+.banner-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  /* background-color: rgba(255, 255, 255, 0.349); */
+  max-width: 990px;
+  min-height: 70px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+  padding: 15px 30px;
+}
+.banner-input-container input[type="text"] {
+  border-radius: 8px;
+  background: #fff;
+  outline: none;
+  border: 0;
+  padding: 16px 35px 16px 16px;
+}
 
-/* finished footer section */
+input::placeholder {
+  color: var(--secondary-description-color);
+  font-weight: 400;
+}
+
+.banner-input-container .time-input i {
+  position: absolute;
+  left: 46%;
+  top: 30px;
+}
+
+.banner-input-container .type-input i {
+  position: absolute;
+  right: 27%;
+  top: 30px;
+}
+
+.btn input {
+  border-radius: 8px;
+  background: #ff5400;
+  border: 0;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  padding: 16px 50px 16px 53px;
+}
+.btn i {
+  position: absolute;
+  right: 16%;
+  top: 33px;
+  color: var(--white-color);
+}
+
+/* finished banner section */
+
+/* here is responsive media query for mobile device */
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  /* here is banner section */
+
+  .banner-section-container {
+    background-position: center center;
+    margin: 0 15px;
+  }
+  .banner-title {
+    font-size: 3rem;
+  }
+  .banner-input-container {
+    flex-direction: column;
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+  .banner-input-container .time-input i {
+    right: 14px;
+    top: 126px;
+  }
+
+  .banner-input-container .type-input i {
+    top: 218px;
+  }
+
+  .btn i {
+    right: 72px;
+    top: 87.7%;
+  }
+  .btn input {
+    padding: 16px 84px 16px 57px;
+  }
+
+  /* finished banner section */
+}
