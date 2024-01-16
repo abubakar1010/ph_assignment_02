@@ -228,15 +228,104 @@ input::placeholder {
   margin: 20px 20px 20px 40px;
 }
 
+
+
 /* finished popular tour section */
 
+/* here is destination section */
 
+.destination-description{
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.destination-container{
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+.image-container{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.maldives{
+  position: absolute;
+  left: 208px;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+.indonesia{
+  position: absolute;
+  right: 208px;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+.srilanka{
+  position: absolute;
+  left: 132px;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+.north{
+  position: absolute;
+  left: 537px;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+.kashmir{
+  position: absolute;
+  right: 79px;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+.bangla{
+  position: absolute;
+  left: 155px;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+.band{
+  position: absolute;
+  right: 259px;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
 
 
 /* here is responsive media query for mobile device */
 
 @media screen and (max-width: 600px) {
   nav {
+    flex-direction: column;
+  }
+  .navigate-container ul{
+    flex-direction: column;
+  }
+
+  .logo-container {
     flex-direction: column;
   }
 
@@ -284,5 +373,61 @@ input::placeholder {
     padding: 0 15px;
   }
 
+  .popular-tour-image-container img{
+    width: 100%;
+    padding: 0 30px;
+  }
   /* finished popular tour section */
+
+  /* here is destination section */
+
+  .image-container{
+    flex-direction: column;
+  }
+
+  .destination-container{
+    max-width: 550px;
+  }
+  .image-container img{
+    width: 90%;
+  }
+
+  .maldives{
+    top: 112px;
+    left: 201px;
+  }
+  
+  .indonesia{
+    top: 375px;
+    left: 201px;
+
+  }
+
+  .srilanka{
+    top: 707px;
+    left: 201px;
+  }
+
+  .north{
+    top: 1030px;
+    left: 155px;
+  }
+
+  .kashmir{
+    top: 1460px;
+    right: 200px;
+  }
+
+  .bangla{
+
+    left: 182px;
+    top: 1870px;
+  }
+  .band{
+    top: 2150px;
+    right: 182px;
+  }
+
+  /* finished destination section */
+
 }
