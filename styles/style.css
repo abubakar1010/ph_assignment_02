@@ -315,6 +315,60 @@ font-size: var(--primary-button-font);
 
 /* finished destination section */
 
+/* why we section */
+
+.why-we-section-container{
+  max-width: 1350px;
+  margin: 100px auto;
+  
+}
+.section-description-container{
+  text-align: center;
+}
+.section-description-container p{
+  margin: 25px 0 45px;
+  padding: 0 275px;
+  line-height: 27px;
+}
+
+.first-row{
+  display: flex;
+  gap: 35px;
+}
+
+.first-row div {
+  width: 50%;
+  padding: 35px;
+}
+
+.card1{
+  border-radius: 16px;
+border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgba(251, 181, 99, 0.05);
+}
+
+.card2{
+  border-radius: 16px;
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05);
+}
+
+.card3{
+  border-radius: 16px;
+border: 1px solid rgba(233, 68, 68, 0.20);
+background: rgba(233, 68, 68, 0.05);
+padding: 35px;
+max-width: 675px;
+margin: 25px auto;
+}
+.card-container img{
+  width: 45px;
+}
+
+.card-container h3{
+  margin: 30px 0 12px;
+}
+
 /* here is discount section */
 
 /* here is perfect place section */
@@ -587,6 +641,26 @@ padding: 0 150px;
   }
 
   /* finished destination section */
+
+  /* here is why we section */
+
+  .first-row{
+    flex-direction: column;
+  }
+
+  .first-row div{
+    width: 90%;
+    margin: auto;
+  }
+
+  .card3{
+    width: 90%;
+    margin: 35px auto;
+  }
+  .section-description-container p{
+    padding: 20px;
+  }
+  /* finished why we section */
 
   /* here is place section  */
 
