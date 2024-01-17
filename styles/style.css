@@ -92,7 +92,7 @@ nav {
 /* here is banner section */
 
 .banner-section-container {
-  background-image: url("../assets/images/banner.png");
+  background-image: url("../assets/Images/banner.png");
   /* min-height: 550px; */
   background-repeat: no-repeat;
   max-width: 1350px;
@@ -276,25 +276,25 @@ font-size: var(--primary-button-font);
   font-weight: 800;
 }
 .item-1 {
-  background-image: url("../assets/images/maldives.png");
+  background-image: url("../assets/Images/maldives.png");
 }
 .item-2 {
-  background-image: url("../assets/images/indonesia.png");
+  background-image: url("../assets/Images/indonesia.png");
 }
 .item-3 {
-  background-image: url("../assets/images/Rectangle-6.png");
+  background-image: url("../assets/Images/Rectangle-6.png");
 }
 .item-4 {
-  background-image: url("../assets/images/norht.png");
+  background-image: url("../assets/Images/norht.png");
 }
 .item-5 {
-  background-image: url("../assets/images/kashmir.png");
+  background-image: url("../assets/Images/kashmir.png");
 }
 .item-6 {
-  background-image: url("../assets/images/bangladesh.png");
+  background-image: url("../assets/Images/bangladesh.png");
 }
 .item-7 {
-  background-image: url("../assets/images/bandarban.png");
+  background-image: url("../assets/Images/bandarban.png");
 }
 
 /* finished destination section */
