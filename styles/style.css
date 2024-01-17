@@ -352,6 +352,90 @@ margin: 50px auto;
 
 /* here is discount section */
 
+/* here is card section */
+
+.card-section-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  max-width: 1065px;
+  margin: 45px auto;
+}
+.card-section-title{
+  color: var(--primary-text-color);
+font-size: 1.8rem;
+font-weight: 600;
+line-height: 70px; 
+text-align: center;
+margin-top: 120px;
+}
+
+.card{
+  border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+padding: 14px 17px;
+}
+
+
+.card-title{
+  color: var(--secondary-text-color-gray);
+font-size: 1.8rem;
+font-weight: 500;
+line-height: 40px; 
+}
+
+.card-price{
+  color:  var(--dark-color1);
+font-size: 1.5rem;
+font-weight: 400;
+line-height: 150%;
+padding-bottom: 8px; 
+}
+
+.card-description{
+  color: var(--secondary-text-color-gray);
+font-size: 14px;
+font-weight: 700;
+line-height: 143%; 
+letter-spacing: 0.252px;
+padding-bottom: 15px;
+}
+
+.card-rating{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.card-image img{
+  width: 15px;
+  margin: auto;
+}
+
+.arrow{
+  color:var(--primary-orange-color);
+font-size: 16px;
+font-weight: 700;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+max-width: 1350px;
+margin-right: 230px;
+margin-bottom: 120px;
+}
+
+.arrow i{
+  margin-left: 5px;
+}
+
+.card-main-image{
+  width: 300px;
+}
+
+/* finished card button */
+
 /* here is perfect place section */
 
 .perfect-place-container{
@@ -609,6 +693,23 @@ padding: 0 150px;
   }
   /* finished why we section */
 
+  /* here is best rating section  */
+  .card-section-container{
+    grid-template-columns: 1fr;
+  }
+
+  .arrow{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .card{
+    width: 70%;
+    margin: auto;
+  }
+
+  /* finished best rating section */
   /* here is place section  */
 
   .perfect-place-container{
