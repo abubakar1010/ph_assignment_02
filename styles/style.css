@@ -38,6 +38,9 @@ font-weight: 400;
 
 /* here is nav section */
 
+.bar-container{
+  display: none;
+}
 nav {
   display: flex;
   align-items: center;
@@ -595,16 +598,32 @@ padding: 0 150px;
 /* here is responsive media query for mobile device */
 
 @media screen and (max-width: 600px) {
-  nav {
-    flex-direction: column;
-  }
-  .navigate-container ul{
-    flex-direction: column;
+  
+  .navigate-container{
+    display: none;
   }
 
-  .logo-container {
-    flex-direction: column;
+  .bar-container{
+    display: block;
   }
+
+  .logo-container h3 ,.uncommon-style{
+    font-size: 1.3rem !important; 
+  }
+
+  .logo-container img{
+    width: 45px;
+  }
+
+  nav{
+    padding: 0 40px;
+  }
+
+  .logo-container{
+    gap: 10px;
+  }
+
+  
 
   /* here is banner section */
 
